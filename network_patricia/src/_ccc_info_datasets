@@ -2,7 +2,7 @@
 =====
 1
 ../../network_patricia_data/1.udp > output_large.txt
-50000
+2500000
 =====
 2
 ../../network_patricia_data/2.udp > output_large.txt

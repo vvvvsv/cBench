@@ -2,7 +2,7 @@
 =====
 1
 ../../automotive_qsort_data/1.dat output.dat > ftmp_out
-226
+1000
 =====
 2
 ../../automotive_qsort_data/2.dat output.dat > ftmp_out

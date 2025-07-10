@@ -2,7 +2,7 @@
 =====
 1
 -z -k -f -c ../../automotive_qsort_data/1.dat > ftmp_out
-40
+150
 =====
 2
 -z -k -f -c ../../automotive_qsort_data/16.dat > ftmp_out

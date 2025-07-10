@@ -2,7 +2,7 @@
 =====
 1
 ../../consumer_tiff_data/1.tif output_largebw.tif > ftmp_out
-6757
+25000
 =====
 2
 ../../consumer_tiff_data/2.tif output_largebw.tif > ftmp_out

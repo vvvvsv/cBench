@@ -2,7 +2,7 @@
 =====
 1
 -dct int -ppm -outfile output_large_decode.ppm ../../consumer_jpeg_data/1.jpg > ftmp_out
-8750
+30000
 =====
 2
 -dct int -ppm -outfile output_large_decode.ppm ../../consumer_jpeg_data/2.jpg > ftmp_out

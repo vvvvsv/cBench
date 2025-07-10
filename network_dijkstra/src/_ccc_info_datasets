@@ -2,7 +2,7 @@
 =====
 1
 ../../network_dijkstra_data/1.dat > output_large.dat
-500000
+25000000
 =====
 2
 ../../network_dijkstra_data/2.dat > output_large.dat

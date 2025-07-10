@@ -2,7 +2,7 @@
 =====
 1
 -d -k -f -c ../../bzip2_data/1.bz2 > ftmp_out
-80
+300
 =====
 2
 -d -k -f -c ../../bzip2_data/2.bz2 > ftmp_out

@@ -2,7 +2,7 @@
 =====
 1
 -sDEVICE=ppm -dNOPAUSE -q -sOutputFile=output.ppm -- ../../office_data/1.ps > ftmp_out
-40
+150
 =====
 2
 -sDEVICE=ppm -dNOPAUSE -q -sOutputFile=output.ppm -- ../../office_data/2.ps > ftmp_out

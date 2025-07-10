@@ -2,7 +2,7 @@
 =====
 1
 -fps -c ../../telecom_gsm_data/1.au > output_large.encode.gsm
-558
+1758
 =====
 2
 -fps -c ../../telecom_gsm_data/2.au > output_large.encode.gsm

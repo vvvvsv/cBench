@@ -2,7 +2,7 @@
 =====
 1
 ../../consumer_tiff_data/1.nocomp.tif output_largemedian.tif > ftmp_out
-3659
+14000
 =====
 2
 ../../consumer_tiff_data/2.nocomp.tif output_largemedian.tif > ftmp_out

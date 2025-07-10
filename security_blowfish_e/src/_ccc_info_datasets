@@ -2,7 +2,7 @@
 =====
 1
 e ../../office_data/1.txt output_large.enc 1234567890abcdeffedcba0987654321  > ftmp_out
-180006
+360006
 =====
 2
 e ../../office_data/2.txt output_large.enc 1234567890abcdeffedcba0987654321  > ftmp_out

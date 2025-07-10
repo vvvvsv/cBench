@@ -2,7 +2,7 @@
 =====
 1
 -dct int -progressive -opt -outfile output_large_encode.jpeg ../../consumer_jpeg_data/1.ppm > ftmp_out
-2114
+7000
 =====
 2
 -dct int -progressive -opt -outfile output_large_encode.jpeg ../../consumer_jpeg_data/2.ppm > ftmp_out

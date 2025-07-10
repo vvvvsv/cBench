@@ -2,7 +2,7 @@
 =====
 1
 ../../automotive_susan_data/1.pgm output_large.edges.pgm -e > ftmp_out
-374
+1400
 =====
 2
 ../../automotive_susan_data/2.pgm output_large.edges.pgm -e > ftmp_out

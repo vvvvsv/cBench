@@ -2,7 +2,7 @@
 =====
 1
 ../../automotive_susan_data/1.pgm output_large.corners.pgm -c > ftmp_out
-782
+3000
 =====
 2
 ../../automotive_susan_data/2.pgm output_large.corners.pgm -c > ftmp_out

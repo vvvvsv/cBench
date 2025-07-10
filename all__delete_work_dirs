@@ -1,13 +1,13 @@
-#! /bin/sh
+#!/bin/sh
 
 for i in *
 do
 
-if [ -d "$i" ] 
+if [ -d "$i" ]
 then
  tmp=$PWD
  cd $i
- if [ -d "src" ] 
+ if [ -d "src" ]
  then
   # *** process directory ***
   echo $i

@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 if [ ! -z $1 ] ; then
  cp -f Makefile.$1 Makefile

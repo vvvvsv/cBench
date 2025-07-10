@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 #RUNTIME Environment
 #export CCC_RE=lli
@@ -28,7 +28,7 @@ then
    do
     echo "##########################################################"
     echo "Dataset: $j"
-    bash __run $j
+    sh __run $j
    done
   # *************************
  fi

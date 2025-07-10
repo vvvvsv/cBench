@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/sh
 
 rm -f tmp*
 
@@ -9,21 +9,20 @@ fi
 
 #Searching for dataset info (command line and loop wrapper)
 found="0"
-exec 5< _ccc_info_datasets
- read <&5 ds_max ;
- while read <&5 line; 
- do 
-  if [ "$line" == "=====" ]; then
-   read <&5 ds ;
-   read <&5 cmd ;
-   read <&5 loop_wrap ;
-   if [ $ds -eq $1 ] ; then
-    found="1"
-    break;
-   fi
-  fi
- done
-exec 5>&-
+{
+  read ds_max
+  while read line; do
+    if [ "$line" = "=====" ]; then
+      read ds
+      read cmd
+      read loop_wrap
+      if [ "$ds" -eq "$1" ]; then
+        found="1"
+        break
+      fi
+    fi
+  done
+} < _ccc_info_datasets
 
 if [ $found != "1" ] ; then
  echo "Can't find dataset info in the _ccc_info_datasets file ..."

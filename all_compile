@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 set -xe
 #Optimization flags
 export CCC_OPTS=-O3
@@ -12,17 +12,17 @@ if [ -f bench_list ]
 then
   benchmarks=`grep -v ^# bench_list`
 else
-  benchmarks=*  
+  benchmarks=*
 fi
 
 for i in $benchmarks
 do
 
-if [ -d "$i" ] 
+if [ -d "$i" ]
 then
  tmp=$PWD
  cd $i
- if [ -d "src" ] 
+ if [ -d "src" ]
  then
   # *** process directory ***
   echo "**********************************************************"
@@ -30,7 +30,7 @@ then
   cd src
   bash __compile $COMPILER
   echo ""
-  ls -l a.out 
+  ls -l a.out
   echo ""
   # *************************
  fi

@@ -8,17 +8,17 @@ if [ -f bench_list ]
 then
   benchmarks=`grep -v ^# bench_list`
 else
-  benchmarks=*  
+  benchmarks=*
 fi
 
 for i in $benchmarks
 do
 
-if [ -d "$i" ] 
+if [ -d "$i" ]
 then
  tmp=$PWD
  cd $i
- if [ -d "src" ] 
+ if [ -d "src" ]
  then
   # *** process directory ***
   echo "**********************************************************"
@@ -28,7 +28,7 @@ then
    do
     echo "##########################################################"
     echo "Dataset: $j"
-    __run $j
+    bash __run $j
    done
   # *************************
  fi

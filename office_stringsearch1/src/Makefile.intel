@@ -1,4 +1,4 @@
-# ************ CCC - passing optimization flags ************ 
+# ************ CCC - passing optimization flags ************
 ifeq ($(CCC_OPTS),)
  CCC_OPTS =
 endif
@@ -7,8 +7,8 @@ ifeq ($(CCC_OPTS_ADD),)
 endif
 
 # Declarations
-ifeq ($(ZCC),) 
- ZCC = icc 
+ifeq ($(ZCC),)
+ ZCC = icc
 endif
 ifeq ($(LDCC),)
  LDCC = icc
@@ -18,9 +18,9 @@ ifeq ($(LD_OPTS),)
 endif
 
 # Actions
-all:		
+all:
 	$(ZCC) $(CCC_OPTS) $(CCC_OPTS_ADD) -c -DUNIX -DPORTABLE *.c
-	$(LDCC) $(LD_OPTS) $(CCC_OPTS_ADD) -lm *.o
+	$(LDCC) $(LD_OPTS) $(CCC_OPTS_ADD) *.o -lm
 
 clean:
 	rm -f a.out *.o *.a *.s *.i *.I

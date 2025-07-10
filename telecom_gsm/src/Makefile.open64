@@ -1,4 +1,4 @@
-# ************ CCC - passing optimization flags ************ 
+# ************ CCC - passing optimization flags ************
 ifeq ($(CCC_OPTS),)
  CCC_OPTS =
 endif
@@ -7,7 +7,7 @@ ifeq ($(CCC_OPTS_ADD),)
 endif
 
 # Declarations
-ifeq ($(ZCC),) 
+ifeq ($(ZCC),)
  ZCC = opencc
 endif
 ifeq ($(LDCC),)
@@ -18,9 +18,9 @@ ifeq ($(LD_OPTS),)
 endif
 
 # Actions
-all:		
+all:
 	$(ZCC) $(CCC_OPTS) $(CCC_OPTS_ADD) -c -DSASR -DSTUPID_COMPILER -DNeedFunctionPrototypes=1 *.c
-	$(LDCC) $(LD_OPTS) $(CCC_OPTS_ADD) -lm *.o
+	$(LDCC) $(LD_OPTS) $(CCC_OPTS_ADD) *.o -lm
 
 clean:
 	rm -f a.out *.o *.a *.s *.i *.I

@@ -88,7 +88,7 @@
 #define USE_MMAP 1
 
 /* Define to 1 if NLS is requested.  */
-#undef ENABLE_NLS 
+#undef ENABLE_NLS
 
 /* Define as 1 if you have catgets and don't want to use GNU gettext.  */
 /* #undef HAVE_CATGETS */
@@ -212,9 +212,6 @@
 
 /* Define if you have the efence library (-lefence).  */
 /* #undef HAVE_LIBEFENCE */
-
-/* Define if you have the esd library (-lesd).  */
-#undef HAVE_LIBESD 
 
 /* Define if you have the i library (-li).  */
 /* #undef HAVE_LIBI */

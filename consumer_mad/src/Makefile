@@ -1,4 +1,4 @@
-# ************ CCC - passing optimization flags ************ 
+# ************ CCC - passing optimization flags ************
 ifeq ($(CCC_OPTS),)
  CCC_OPTS =
 endif
@@ -7,8 +7,8 @@ ifeq ($(CCC_OPTS_ADD),)
 endif
 
 # Declarations
-ifeq ($(ZCC),) 
- ZCC = gcc 
+ifeq ($(ZCC),)
+ ZCC = gcc
 endif
 ifeq ($(LDCC),)
  LDCC = gcc
@@ -18,9 +18,9 @@ ifeq ($(LD_OPTS),)
 endif
 
 # Actions
-all:		
+all:
 	$(ZCC) $(CCC_OPTS) $(CCC_OPTS_ADD) -c -I. -DFPM_DEFAULT -DHAVE_CONFIG_H -DLOCALEDIR=\"/usr/local/share/locale\" *.c
-	$(LDCC) $(LD_OPTS) $(CCC_OPTS_ADD) -lm -lz -lesd *.o
+	$(LDCC) $(LD_OPTS) $(CCC_OPTS_ADD) -lm -lz *.o
 
 clean:
 	rm -f a.out *.o *.a *.s *.i *.I

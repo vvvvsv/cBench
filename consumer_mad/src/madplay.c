@@ -191,10 +191,6 @@ void show_usage(int verbose)
 # if defined(DEBUG)
   EPUTS(_("  hex     ASCII hexadecimal [24-bit] linear PCM\n"));
 # endif
-# if defined(HAVE_LIBESD)
-  EPUTS(_("  esd     Enlightened Sound Daemon [16-bit]"
-	  " (give speaker host as PATH)\n"));
-# endif
   EPUTS(_("  null    no output (decode only)\n"));
 }
 

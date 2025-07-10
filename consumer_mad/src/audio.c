@@ -65,9 +65,6 @@ audio_ctlfunc_t *audio_output(char const **path)
 # if defined(DEBUG)
     { "hex",  audio_hex  },
 # endif
-# if defined(HAVE_LIBESD)
-    { "esd",  audio_esd  },
-# endif
     { "null", audio_null },
     { "nul",  audio_null }
   };

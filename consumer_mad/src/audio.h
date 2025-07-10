@@ -90,7 +90,6 @@ typedef int audio_ctlfunc_t(union audio_control *);
 audio_ctlfunc_t *audio_output(char const **);
 
 audio_ctlfunc_t audio_oss;
-audio_ctlfunc_t audio_esd;
 audio_ctlfunc_t audio_empeg;
 audio_ctlfunc_t audio_sun;
 audio_ctlfunc_t audio_win32;
